@@ -43,7 +43,7 @@ $('#btn').on('click', function() {
 
 var nextPuzzle = function() {
 	curPuzzle = randomPuzzle();
-	board.position(curPuzzle.fen);
+	board.position(curPuzzle.fen, false);
 	console.log('------------------');
 	console.log('NEW PUZZLE');
 	console.log('------------------');
